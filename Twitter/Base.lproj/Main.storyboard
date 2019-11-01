@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="3Fz-bh-ACJ">
             <objects>
-                <viewController id="R6t-ge-OGw" sceneMemberID="viewController">
+                <viewController id="R6t-ge-OGw" customClass="LoginViewController" customModule="Twitter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X7o-Tc-Cvr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,6 +26,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButton:" destination="R6t-ge-OGw" eventType="touchUpInside" id="tfj-FH-4v5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -43,7 +46,7 @@
             </objects>
             <point key="canvasLocation" x="-31.199999999999999" y="33.733133433283363"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Home-->
         <scene sceneID="8LS-7x-xew">
             <objects>
                 <tableViewController id="DbR-cl-az0" sceneMemberID="viewController">
@@ -66,7 +69,7 @@
                             <outlet property="delegate" destination="DbR-cl-az0" id="O9e-ID-gqd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="JV5-PD-ezB"/>
+                    <navigationItem key="navigationItem" title="Home" id="JV5-PD-ezB"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eUd-0f-oHG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,6 +82,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uCF-Iy-j1i">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.48722344811164059" green="0.97971252738898107" blue="0.99193829298019409" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <connections>
                         <segue destination="DbR-cl-az0" kind="relationship" relationship="rootViewController" id="Ff1-GZ-GNp"/>
