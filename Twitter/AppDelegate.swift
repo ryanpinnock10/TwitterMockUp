@@ -5,7 +5,6 @@
 //  Created by Dan on 1/3/19.
 //  Copyright © 2019 Dan. All rights reserved.
 //
-
 import UIKit
 import BDBOAuth1Manager
 
@@ -13,7 +12,6 @@ import BDBOAuth1Manager
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -46,6 +44,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         TwitterAPICaller.client?.handleOpenUrl(url: url)
         return true
     }
-
 }
-
